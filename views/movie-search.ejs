@@ -35,7 +35,7 @@
       let resultsDiv = document.querySelector('#results');
 
       function search() {
-        const query = `https://api.themoviedb.org/3/search/movie?api_key=${ API_KEY }&query=${ term.value }&language=fr-FR`;
+        const query = `https://api.themoviedb.org/3/search/movies?api_key=${ API_KEY }&query=${ term.value }&language=fr-FR`;
         axios.get(query)
           .then(function(response) {
           console.log(response);
