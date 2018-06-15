@@ -71,7 +71,7 @@ app.get('/movies/:id/', (req, res) =>{    //les ':' + le nom de mon paramètre s
 
 //ma racine
 app.get('/', (req, res) =>{
-  res.render('index');                       // pour lier node à un template, toujours utiliser render()
+  res.render('index');                   // pour lier node à un template, toujours utiliser render()
 })
 
 app.get('/movie-search',(req, res) => {
@@ -94,7 +94,7 @@ app.post('/login', (req, res) =>{
       if(fakeUser.email === req.body.email && fakeUser.password === req.body.password) {
         res.json({
           email: 'testuser@gmail.fr',
-          favoriteMovie: 'Il était une fois en chine',
+          favoriteMovie: 'Il était une fois en Chine',
           favoriteMovieTheatre: 'MK2 bibliothèque',
           lastLoginDate: new Date()
         });
